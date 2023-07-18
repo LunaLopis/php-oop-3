@@ -35,11 +35,7 @@
                             <p>Contenuto: <?php echo $CommunicationSystem->getContenuto(); ?></p>
                             <p>Invio: <?php echo $CommunicationSystem->invio(); ?></p>   
                             <p>Colore Led: <?php echo $CommunicationSystem::$coloreLed; ?></p>                      
-                                <!-- oggetto istanza di una classe o ereditarietà 
-                                $class = get_class($Email);
-                                if (is_subclass_of($class, 'CommunicationSystem')) {
-                                // L'oggetto $Email è una sottoclasse della classe CommunicationSystem
-                                }-->  
+ 
                             <?php if($CommunicationSystem instanceof Email){?>
                                     <p><?php echo $CommunicationSystem->stampa(); ?></p>
                                     <p><?php echo $CommunicationSystem->inoltro(); ?></p>
